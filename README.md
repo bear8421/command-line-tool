@@ -8,7 +8,7 @@ Base Command Line Tool use Silly CLI micro-framework based on Symfony Console
 
 Buy me a coffee: https://paypal.me/nguyenanhung
 
-## Sumary
+## Summary
 
 | Key       | Value                                                        |
 | --------- | ------------------------------------------------------------ |
@@ -19,7 +19,7 @@ Buy me a coffee: https://paypal.me/nguyenanhung
 
 ## Install the Application
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+Run this command from the directory in which you want to install your new CLI micro-framework application.
 
 ```shell
 composer create-project nguyenanhung/start-project-use-command [my-app-name]
