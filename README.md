@@ -1,5 +1,7 @@
 # Start Project use CLI
 
+[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/start-project-use-command/v)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![Total Downloads](http://poser.pugx.org/nguyenanhung/start-project-use-command/downloads)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/start-project-use-command/v/unstable)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![License](http://poser.pugx.org/nguyenanhung/start-project-use-command/license)](https://packagist.org/packages/nguyenanhung/start-project-use-command)
+
 Base Command Line Tool use Silly CLI micro-framework based on Symfony Console
 
 ## Donate Me
