@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+// Register Application Space
+define('BEAR', $_SERVER['BEAR_ENV'] ?? 'production');
+
+// Includes Composer Vendor Packages
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Silly\Edition\PhpDi\Application;
+
+$app = new Application();
+
+// Routes list Command
+$app->command('greet [name] [--upper]', 'Bear\App\Controllers\TestCommand');
+
+try {
+    $app->run();
+}
+catch (Exception $e) {
+    echo $e->getMessage();
+}
