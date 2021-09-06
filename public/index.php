@@ -7,5 +7,5 @@
  * Date: 08/29/2021
  * Time: 00:33
  */
-header('Location: https://nguyenanhung.com/');
-exit;
+echo "Only support in PHP CLI environment";
+die();
