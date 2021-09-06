@@ -8,14 +8,14 @@
  * Time: 22:32
  */
 
-namespace Bear\App\Controllers;
+namespace Bear\App\Command;
 
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * Class TestCommand
  *
- * @package   Bear\App\Controllers
+ * @package   Bear\App\Command
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
@@ -25,7 +25,7 @@ class TestCommand
     {
         if ($name) {
             $text = 'Hello, Iam ' . $name;
-            $output->writeln("Nguyễn An Hưng");
+            $output->writeln("Bear");
         } else {
             $text = 'Hello, Iam.' . $this->son();
         }

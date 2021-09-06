@@ -11,7 +11,7 @@ use Silly\Edition\PhpDi\Application;
 $app = new Application();
 
 // Routes list Command
-$app->command('greet [name] [--upper]', 'Bear\App\Controllers\TestCommand');
+$app->command('greet [name] [--upper]', 'Bear\App\Command\TestCommand');
 
 try {
     $app->run();
