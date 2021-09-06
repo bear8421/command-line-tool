@@ -35,7 +35,7 @@ Replace `[my-app-name]` with the desired directory name for your new application
 
 ## Usage
 
-Create `TestCommand` in namespace `Bear\App\Controllers`
+Create `TestCommand` in namespace `Bear\App\Command`
 
 ```php
 class TestCommand
@@ -44,7 +44,7 @@ class TestCommand
     {
         if ($name) {
             $text = 'Hello, Iam ' . $name;
-            $output->writeln("Nguyễn An Hưng");
+            $output->writeln("Bear");
         } else {
             $text = 'Hello, Iam.' . $this->son();
         }
@@ -78,7 +78,7 @@ use Silly\Edition\PhpDi\Application;
 $app = new Application();
 
 // Routes list Command
-$app->command('greet [name] [--upper]', 'Bear\App\Controllers\TestCommand');
+$app->command('greet [name] [--upper]', 'Bear\App\Command\TestCommand');
 
 try {
     $app->run();
