@@ -18,8 +18,8 @@
         "mnapoli/silly-php-di": "^1.2"
     },
     "require-dev": {
-        "nguyenanhung/pdo": "^1.0",
-        "nguyenanhung/requests": "^2.0",
+        "nguyenanhung/pdo": "^2.0",
+        "nguyenanhung/requests": "^3.0",
         "pheromone/phpcs-security-audit": "^2.0"
     },
     "autoload": {
