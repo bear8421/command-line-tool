@@ -11,6 +11,7 @@
 namespace Bear\App\Command;
 
 use Symfony\Component\Console\Output\OutputInterface;
+use Faker\Factory;
 
 /**
  * Class TestCommand
@@ -21,16 +22,18 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class TestCommand
 {
-    public function __invoke($name, $upper, OutputInterface $output)
+    public function __invoke($name, $upper, $randomFaker, OutputInterface $output)
     {
         if ($name) {
             $text = 'Hello, Iam ' . $name;
-            $output->writeln("Bear");
         } else {
-            $text = 'Hello, Iam.' . $this->son();
+            $text = 'Hello, Iam ' . $this->son();
         }
         if ($upper) {
             $text = strtoupper($text);
+        }
+        if ($randomFaker) {
+            $this->randomFaker($output);
         }
         $output->writeln($text);
     }
@@ -38,5 +41,16 @@ class TestCommand
     protected function son(): string
     {
         return "Bear";
+    }
+
+    protected function randomFaker(OutputInterface $output)
+    {
+        $faker = Factory::create();
+
+        $max = 100;
+        for ($i = 0; $i < $max; $i++) {
+            $testMessage = $faker->ipv4() . ' | ' . $faker->name() . ' | ' . $faker->phoneNumber() . ' | ' . $faker->safeEmail() . ' | ' . $faker->uuid();
+            $output->writeln($testMessage);
+        }
     }
 }

@@ -14,13 +14,17 @@
     ],
     "require": {
         "php": ">=7.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-mbstring": "*",
         "mnapoli/silly": "^1.7",
         "mnapoli/silly-php-di": "^1.2"
     },
     "require-dev": {
         "nguyenanhung/pdo": "^2.0",
         "nguyenanhung/requests": "^3.0",
-        "pheromone/phpcs-security-audit": "^2.0"
+        "pheromone/phpcs-security-audit": "^2.0",
+        "fakerphp/faker": "^1.16"
     },
     "autoload": {
         "psr-4": {

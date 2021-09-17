@@ -7,5 +7,5 @@
  * Date: 08/29/2021
  * Time: 00:33
  */
-echo "Only support in PHP CLI environment";
-die();
+http_response_code(403);
+exit('Access Denied!');
