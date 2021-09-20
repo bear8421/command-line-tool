@@ -31,6 +31,4 @@ jobs:
             -   name: Install dependencies
                 run: composer install --no-progress --no-dev --prefer-dist --optimize-autoloader --ignore-platform-reqs
             -   name: Start Test Command
-                run: php bear greet
-            -   name: Start Test Random Faker
-                run: php bear greet --randomFaker
+                run: php bear greet Bear --upper --randomFaker

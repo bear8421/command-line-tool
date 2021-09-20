@@ -43,7 +43,7 @@ class TestCommand
         return "Bear";
     }
 
-    protected function randomFaker(OutputInterface $output)
+    protected function randomFaker(OutputInterface $output): void
     {
         $faker = Factory::create();
 
