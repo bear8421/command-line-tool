@@ -5,7 +5,7 @@
 ### Added
 
 - [x] Add GitHub Action Workflows
-- [x] Hiện tại, thư viện hỗ trợ các phiên bản PHP: `^PHP 7.1 || ^PHP 8.0`.
+- [x] Hiện tại, thư viện hỗ trợ các phiên bản PHP: `^PHP 7.3 || ^PHP 8.0`.
 - [x] Optimize code để tối ưu khả năng tương thích và tốc độ với PHP 7 trở lên
 
 ## [1.0.4] - 2021/09/18
