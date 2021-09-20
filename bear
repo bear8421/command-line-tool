@@ -8,14 +8,16 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Silly\Edition\PhpDi\Application;
 
+// List all Command
+use Bear\App\Command\TestCommand;
+
 $app = new Application();
 
 // Routes list Command
-$app->command('greet [name] [--upper] [--randomFaker]', 'Bear\App\Command\TestCommand');
+$app->command('greet [name] [--upper] [--randomFaker]', TestCommand::class);
 
 try {
     $app->run();
-}
-catch (Exception $e) {
+} catch (Exception $e) {
     echo $e->getMessage();
 }

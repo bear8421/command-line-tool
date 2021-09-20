@@ -51,7 +51,7 @@ class GetConfig
     public static function item($itemName)
     {
         $config = static::loadConfig();
-        if (in_array($itemName, $config)) {
+        if (in_array($itemName, $config, true)) {
             return $config[$itemName];
         }
 

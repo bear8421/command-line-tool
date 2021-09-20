@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": "^7.1 || ^8.0",
         "ext-json": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
@@ -21,8 +21,11 @@
         "mnapoli/silly-php-di": "^1.2"
     },
     "require-dev": {
-        "nguyenanhung/pdo": "^2.0",
+        "nguyenanhung/my-debug": "^3.0",
+        "nguyenanhung/my-cache": "^3.0",
+        "nguyenanhung/database": "^3.0",
         "nguyenanhung/requests": "^3.0",
+        "roave/security-advisories": "dev-latest",
         "pheromone/phpcs-security-audit": "^2.0",
         "fakerphp/faker": "^1.16"
     },
@@ -43,6 +46,7 @@
         "nguyenanhung/database": "Needs for support Database",
         "nguyenanhung/requests": "Needs for support Request use CURL",
         "nguyenanhung/my-debug": "Needs for support Logger",
+        "nguyenanhung/my-cache": "Needs for support Cache",
         "pheromone/phpcs-security-audit": "phpcs-security-audit is a set of PHP_CodeSniffer rules that finds vulnerabilities and weaknesses related to security in PHP coder"
     }
 }
