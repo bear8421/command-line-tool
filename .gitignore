@@ -79,7 +79,7 @@ composer.phar
 
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+composer.lock
 
 ### Example user template template
 ### Example user template
@@ -143,16 +143,11 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 # Project
-/application/logs/*
-!/application/logs/index.html
-/application/cache/*
-!/application/cache/index.html
+/storage/*
+!/storage/logs/.gitkeep
+!/storage/database/.gitkeep
+!/storage/cache/.gitkeep
+!/storage/debug/.gitkeep
+!/storage/tmp/.gitkeep
+!/storage/firewall/.gitkeep
 
-/application/logs-data/Requests/*
-!/application/logs-data/Requests/index.html
-!/application/logs-data/index.html
-
-
-# Project
-/storage/logs/*
-!/storage/logs/README.md

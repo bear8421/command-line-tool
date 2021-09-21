@@ -3,6 +3,9 @@
 // Register Application Space
 define('BEAR', $_SERVER['BEAR_ENV'] ?? 'production');
 
+// Includes Contants
+require_once __DIR__ . '/config/constants.php';
+
 // Includes Composer Vendor Packages
 require_once __DIR__ . '/vendor/autoload.php';
 

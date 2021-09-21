@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.6] - 2021/09/22
+
+### Added
+
+- [x] Update Structure Base App
+
 ## [1.0.5] - 2021/09/20
 
 ### Added

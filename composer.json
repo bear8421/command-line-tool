@@ -26,6 +26,7 @@
         "nguyenanhung/my-cache": "^3.0",
         "nguyenanhung/database": "^3.0",
         "nguyenanhung/requests": "^3.0",
+        "nguyenanhung/monitor": "^3.0",
         "roave/security-advisories": "dev-latest",
         "pheromone/phpcs-security-audit": "^2.0"
     },
@@ -42,11 +43,11 @@
         "ext-json": "Needs for support JSON",
         "ext-xml": "Needs for support XML",
         "ext-simplexml": "Needs for support SimpleXML",
-        "nguyenanhung/pdo": "Needs for support PDO Database",
-        "nguyenanhung/database": "Needs for support Database",
-        "nguyenanhung/requests": "Needs for support Request use CURL",
         "nguyenanhung/my-debug": "Needs for support Logger",
         "nguyenanhung/my-cache": "Needs for support Cache",
+        "nguyenanhung/database": "Needs for support Database",
+        "nguyenanhung/requests": "Needs for support Request use CURL",
+        "nguyenanhung/monitor": "Needs for support Monitoring Service",
         "pheromone/phpcs-security-audit": "phpcs-security-audit is a set of PHP_CodeSniffer rules that finds vulnerabilities and weaknesses related to security in PHP coder"
     }
 }
