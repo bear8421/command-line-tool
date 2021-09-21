@@ -1,6 +1,6 @@
 # Start Project use CLI
 
-[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/start-project-use-command/v)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![Total Downloads](http://poser.pugx.org/nguyenanhung/start-project-use-command/downloads)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/start-project-use-command/v/unstable)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![License](http://poser.pugx.org/nguyenanhung/start-project-use-command/license)](https://packagist.org/packages/nguyenanhung/start-project-use-command) [![PHP Version Require](http://poser.pugx.org/nguyenanhung/start-project-use-command/require/php)](https://packagist.org/packages/nguyenanhung/start-project-use-command)
+[![Latest Stable Version](http://poser.pugx.org/bear8421/command-line-tool/v)](https://packagist.org/packages/bear8421/command-line-tool) [![Total Downloads](http://poser.pugx.org/bear8421/command-line-tool/downloads)](https://packagist.org/packages/bear8421/command-line-tool) [![Latest Unstable Version](http://poser.pugx.org/bear8421/command-line-tool/v/unstable)](https://packagist.org/packages/bear8421/command-line-tool) [![License](http://poser.pugx.org/bear8421/command-line-tool/license)](https://packagist.org/packages/bear8421/command-line-tool) [![PHP Version Require](http://poser.pugx.org/bear8421/command-line-tool/require/php)](https://packagist.org/packages/bear8421/command-line-tool)
 
 Base Command Line Tool use Silly CLI micro-framework based on Symfony Console
 
@@ -14,21 +14,21 @@ Buy me a coffee: https://paypal.me/nguyenanhung
 | --------- | ------------------------------------------------------------ |
 | Project   | Start Project PHP CLI                                        |
 | Framework | Silly CLI micro-framework                                    |
-| GitHub    | https://github.com/nguyenanhung/start-project-use-command    |
-| Packagist | https://packagist.org/packages/nguyenanhung/start-project-use-command |
+| GitHub    | https://github.com/bear8421/command-line-tool    |
+| Packagist | https://packagist.org/packages/bear8421/command-line-tool |
 
 ## Install the Application
 
 Run this command from the directory in which you want to install your new CLI micro-framework application.
 
 ```shell
-composer create-project nguyenanhung/start-project-use-command [my-app-name]
+composer create-project bear8421/command-line-tool [my-app-name]
 ```
 
 or
 
 ```shell
-php composer.phar create-project nguyenanhung/start-project-use-command [my-app-name]
+php composer.phar create-project bear8421/command-line-tool [my-app-name]
 ```
 
 Replace `[my-app-name]` with the desired directory name for your new application.

@@ -1,9 +1,9 @@
 {
     "description": "Base Command Line Tool use Silly CLI micro-framework based on Symfony Console",
-    "name": "nguyenanhung/start-project-use-command",
+    "name": "bear8421/command-line-tool",
     "type": "project",
     "license": "GPL-3.0-or-later",
-    "homepage": "https://github.com/nguyenanhung/start-project-use-command",
+    "homepage": "https://github.com/bear8421/command-line-tool",
     "authors": [
         {
             "name": "Nguyen An Hung",
