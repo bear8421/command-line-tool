@@ -26,6 +26,7 @@
         "nguyenanhung/my-cache": "^3.0",
         "nguyenanhung/database": "^3.0",
         "nguyenanhung/requests": "^3.0",
+        "nguyenanhung/helpers": "^3.0",
         "nguyenanhung/monitor": "^3.0",
         "roave/security-advisories": "dev-latest",
         "pheromone/phpcs-security-audit": "^2.0"
