@@ -18,8 +18,7 @@
         "ext-curl": "*",
         "ext-mbstring": "*",
         "mnapoli/silly": "^1.7",
-        "mnapoli/silly-php-di": "^1.0",
-        "fakerphp/faker": "^1.16"
+        "mnapoli/silly-php-di": "^1.0"
     },
     "require-dev": {
         "nguyenanhung/my-debug": "^3.0",
@@ -29,7 +28,8 @@
         "nguyenanhung/helpers": "^3.0",
         "nguyenanhung/monitor": "^3.0",
         "roave/security-advisories": "dev-latest",
-        "pheromone/phpcs-security-audit": "^2.0"
+        "pheromone/phpcs-security-audit": "^2.0",
+        "fakerphp/faker": "^1.16"
     },
     "autoload": {
         "psr-4": {
