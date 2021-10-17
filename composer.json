@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^7.0 || ^8.0",
+        "php": "^7.2 || ^8.0",
         "ext-json": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
@@ -21,12 +21,12 @@
         "mnapoli/silly-php-di": "^1.0"
     },
     "require-dev": {
-        "nguyenanhung/my-debug": "^3.0 || ^2.0",
-        "nguyenanhung/my-cache": "^3.0 || ^2.0",
-        "nguyenanhung/database": "^3.0 || ^2.0",
-        "nguyenanhung/requests": "^3.0 || ^2.0",
-        "nguyenanhung/helpers": "^3.0 || ^2.0",
-        "nguyenanhung/monitor": "^3.0 || ^2.0",
+        "nguyenanhung/my-debug": "^3.0",
+        "nguyenanhung/my-cache": "^3.0",
+        "nguyenanhung/database": "^3.0",
+        "nguyenanhung/requests": "^3.0",
+        "nguyenanhung/helpers": "^3.0",
+        "nguyenanhung/monitor": "^3.0",
         "roave/security-advisories": "dev-latest",
         "pheromone/phpcs-security-audit": "^2.0",
         "fakerphp/faker": "^1.9"
