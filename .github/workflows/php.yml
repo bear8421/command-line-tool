@@ -29,6 +29,6 @@ jobs:
                     key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
                     restore-keys: ${{ runner.os }}-composer-
             -   name: Install dependencies
-                run: composer install --no-progress --prefer-dist --optimize-autoloader
+                run: composer install --ignore-platform-reqs --no-progress --prefer-dist --optimize-autoloader
             -   name: Start Test Command
                 run: php bear greet Bear --upper --randomFaker
