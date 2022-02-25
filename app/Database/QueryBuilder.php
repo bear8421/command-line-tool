@@ -10,6 +10,8 @@
 
 namespace Bear\App\Database;
 
+use nguyenanhung\MyDatabase\Model\BaseModel;
+
 /**
  * Class QueryBuilder
  *
@@ -17,7 +19,7 @@ namespace Bear\App\Database;
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
-class QueryBuilder extends \nguyenanhung\MyDatabase\Model\BaseModel
+class QueryBuilder extends BaseModel
 {
     /**
      * QueryBuilder constructor.
@@ -27,7 +29,7 @@ class QueryBuilder extends \nguyenanhung\MyDatabase\Model\BaseModel
      * @author   : 713uk13m <dev@nguyenanhung.com>
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      */
-    public function __construct($database = array())
+    public function __construct(array $database = array())
     {
         parent::__construct($database);
         if (!empty($database)) {
