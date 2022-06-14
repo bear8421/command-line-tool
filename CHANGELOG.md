@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.2] - 2022/06/14
+
+### Added
+
+- [x] Reformat code
+
 ## [1.0.1] - 2021/10/16
 
 ### Added
@@ -20,5 +26,5 @@
 ## Contact
 
 | Name        | Email                | Skype            | Facebook      |
-| ----------- | -------------------- | ---------------- | ------------- |
+|-------------|----------------------|------------------|---------------|
 | Hung Nguyen | dev@nguyenanhung.com | nguyenanhung5891 | @nguyenanhung |

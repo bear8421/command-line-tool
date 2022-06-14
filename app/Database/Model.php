@@ -40,7 +40,7 @@ class Model
         } else {
             $database = GetConfig::getDb($name);
         }
-        if (empty($database) || !is_array($database)) {
+        if (empty($database)) {
             throw new Exception('Database Connection Name Not Found');
         }
         $builder                      = new QueryBuilder($database);

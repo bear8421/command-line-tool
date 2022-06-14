@@ -10,11 +10,11 @@ Buy me a coffee: https://paypal.me/nguyenanhung
 
 ## Summary
 
-| Key       | Value                                                        |
-| --------- | ------------------------------------------------------------ |
-| Project   | Start Project PHP CLI                                        |
-| Framework | Silly CLI micro-framework                                    |
-| GitHub    | https://github.com/bear8421/command-line-tool    |
+| Key       | Value                                                     |
+|-----------|-----------------------------------------------------------|
+| Project   | Start Project PHP CLI                                     |
+| Framework | Silly CLI micro-framework                                 |
+| GitHub    | https://github.com/bear8421/command-line-tool             |
 | Packagist | https://packagist.org/packages/bear8421/command-line-tool |
 
 ## Install the Application
@@ -111,7 +111,7 @@ Also see Official Document here: https://github.com/mnapoli/silly
 If any question & request, please contact following information
 
 | Name        | Email                | Skype            | Facebook      |
-| ----------- | -------------------- | ---------------- | ------------- |
+|-------------|----------------------|------------------|---------------|
 | Hung Nguyen | dev@nguyenanhung.com | nguyenanhung5891 | @nguyenanhung |
 
 From Hanoi with Love <3
