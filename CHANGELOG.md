@@ -1,10 +1,16 @@
 # Change Log
 
-## [1.0.2] - 2022/06/14
+## [1.0.3] - 2022/06/14
 
 ### Added
 
-- [x] Reformat code
+- [x] Version này không có nhiều cải tiến, chủ yếu là format mấy dòng code nhỏ cho tương thích với PHP 7.4
+
+## [1.0.2] - 2022/02/25
+
+### Added
+
+- [x] Version này không có nhiều cải tiến, chủ yếu là format mấy dòng code nhỏ cho tương thích với PHP 7.2
 
 ## [1.0.1] - 2021/10/16
 
