@@ -2,7 +2,7 @@
 
 ## [1.0.5] - 2022/06/17
 
-### Added
+### Fixed
 
 - [x] Fixed lỗi không parse được file Config
 
