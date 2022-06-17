@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.5] - 2022/06/17
+
+### Added
+
+- [x] Fixed lỗi không parse được file Config
+
 ## [1.0.3] - 2022/06/14
 
 ### Added
