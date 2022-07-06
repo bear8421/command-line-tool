@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.5] - 2022/07/06
+
+### Fixed
+
+- [x] Fixed lỗi `PHP-DI`: `PHP Fatal error:  Cannot use lexical variable $parameters as a parameter name in /your_project_path/vendor/php-di/php-di/src/DI/Definition/Resolver/ClassDefinitionResolver.php on line 146`
+
 ## [1.0.4] - 2022/06/17
 
 ### Fixed
