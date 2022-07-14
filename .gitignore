@@ -145,9 +145,4 @@ GitHub.sublime-settings
 # Project
 /storage/*
 !/storage/logs/.gitkeep
-!/storage/database/.gitkeep
 !/storage/cache/.gitkeep
-!/storage/debug/.gitkeep
-!/storage/tmp/.gitkeep
-!/storage/firewall/.gitkeep
-

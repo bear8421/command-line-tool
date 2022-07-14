@@ -20,7 +20,7 @@ use Faker\Factory;
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
-class TestCommand
+class TestCommand extends BaseCommand
 {
     public function __invoke($name, $upper, $randomFaker, OutputInterface $output)
     {

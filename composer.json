@@ -17,9 +17,7 @@
         "ext-json": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
-        "php-di/php-di": "^5.4",
-        "mnapoli/silly": "^1.8",
-        "mnapoli/silly-php-di": "^1.2"
+        "nguyenanhung/console": "^1.0"
     },
     "require-dev": {
         "nguyenanhung/my-debug": "^3.0",
