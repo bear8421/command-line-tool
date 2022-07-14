@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.6] - 2022/07/14
+
+### Upgrade
+
+- [x] Nâng cấp vendor và quy hoạch lại structure folder
+
 ## [1.0.5] - 2022/07/06
 
 ### Fixed
