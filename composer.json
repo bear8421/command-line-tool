@@ -2,7 +2,7 @@
     "description": "Base Command Line Tool use Silly CLI micro-framework based on Symfony Console",
     "name": "bear8421/command-line-tool",
     "type": "project",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "homepage": "https://github.com/bear8421/command-line-tool",
     "authors": [
         {

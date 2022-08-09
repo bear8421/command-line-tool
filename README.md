@@ -104,7 +104,7 @@ HELLO JOHN
 
 ## Documentation
 
-Also see Official Document here: https://github.com/mnapoli/silly
+Also see Official Document here: https://github.com/bear8421/command-line-tool/docs
 
 ## Contact
 

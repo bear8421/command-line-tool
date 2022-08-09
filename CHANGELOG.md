@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.7] - 2022/08/09
+
+### Upgrade
+
+- [x] Cập nhật cấu trúc liên quan đến Database
+
 ## [1.0.6] - 2022/07/14
 
 ### Upgrade
