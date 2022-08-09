@@ -104,7 +104,7 @@ HELLO JOHN
 
 ## Documentation
 
-Also see Official Document here: https://github.com/bear8421/command-line-tool/docs
+Also see Official Document here: https://github.com/bear8421/command-line-tool/tree/main/docs
 
 ## Contact
 
