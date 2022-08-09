@@ -4,7 +4,7 @@
 
 ### Upgrade
 
-- [x] Cập nhật cấu trúc liên quan đến Database
+- [x] Cập nhật cấu trúc liên quan đến Database, Document
 
 ## [1.0.6] - 2022/07/14
 
