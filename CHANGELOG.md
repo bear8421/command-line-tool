@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.9] - 2023/03/01
+
+### Upgrade
+
+- [x] Update `.gitignore`
+
 ## [1.0.8] - 2023/03/01
 
 ### Upgrade
@@ -22,7 +28,8 @@
 
 ### Fixed
 
-- [x] Fixed lỗi `PHP-DI`: `PHP Fatal error:  Cannot use lexical variable $parameters as a parameter name in /your_project_path/vendor/php-di/php-di/src/DI/Definition/Resolver/ClassDefinitionResolver.php on line 146`
+- [x] Fixed
+  lỗi `PHP-DI`: `PHP Fatal error:  Cannot use lexical variable $parameters as a parameter name in /your_project_path/vendor/php-di/php-di/src/DI/Definition/Resolver/ClassDefinitionResolver.php on line 146`
 
 ## [1.0.4] - 2022/06/17
 
