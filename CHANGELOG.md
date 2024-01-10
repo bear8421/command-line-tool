@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.0] - 2023/01/11
+
+### Upgrade
+
+- [x] Refactoring code
+
 ## [1.0.9] - 2023/03/01
 
 ### Upgrade

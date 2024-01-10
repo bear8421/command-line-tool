@@ -24,7 +24,7 @@ class Logger
     /**
      * Function init
      *
-     * @return \nguyenanhung\MyDebug\Logger
+     * @return BaseLogger
      * @author   : 713uk13m <dev@nguyenanhung.com>
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 14/07/2022 10:12

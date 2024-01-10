@@ -24,7 +24,7 @@ class Cache
     /**
      * Function setup
      *
-     * @return \nguyenanhung\MyCache\Cache
+     * @return BaseCache
      * @author   : 713uk13m <dev@nguyenanhung.com>
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/22/2021 14:15

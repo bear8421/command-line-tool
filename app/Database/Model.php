@@ -27,8 +27,8 @@ class Model
      *
      * @param string $name
      *
-     * @return \Bear\App\Database\QueryBuilder
-     * @throws \Exception
+     * @return QueryBuilder
+     * @throws Exception
      * @author   : 713uk13m <dev@nguyenanhung.com>
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/22/2021 16:41
