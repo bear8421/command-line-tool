@@ -9,5 +9,5 @@
  */
 
 return [
-    'item_one' => ''
+	'item_one' => ''
 ];

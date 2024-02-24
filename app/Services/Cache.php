@@ -21,26 +21,26 @@ use nguyenanhung\MyCache\Cache as BaseCache;
  */
 class Cache
 {
-    /**
-     * Function setup
-     *
-     * @return BaseCache
-     * @author   : 713uk13m <dev@nguyenanhung.com>
-     * @copyright: 713uk13m <dev@nguyenanhung.com>
-     * @time     : 09/22/2021 14:15
-     */
-    public static function setup(): BaseCache
-    {
-        $cachePath  = __DIR__ . '/../../storage/cache';
-        $loggerPath = __DIR__ . '/../../storage/debug';
-        $cache      = new BaseCache();
-        $cache->setDebugStatus(true)
-              ->setDebugLevel('info')
-              ->setDebugLoggerPath($loggerPath)
-              ->setCachePath($cachePath)
-              ->setCacheSecurityKey('xxx')
-              ->__construct();
+	/**
+	 * Function setup
+	 *
+	 * @return BaseCache
+	 * @author   : 713uk13m <dev@nguyenanhung.com>
+	 * @copyright: 713uk13m <dev@nguyenanhung.com>
+	 * @time     : 09/22/2021 14:15
+	 */
+	public static function setup(): BaseCache
+	{
+		$cachePath = __DIR__ . '/../../storage/cache';
+		$loggerPath = __DIR__ . '/../../storage/debug';
+		$cache = new BaseCache();
+		$cache->setDebugStatus(true)
+			->setDebugLevel('info')
+			->setDebugLoggerPath($loggerPath)
+			->setCachePath($cachePath)
+			->setCacheSecurityKey('xxx')
+			->__construct();
 
-        return $cache;
-    }
+		return $cache;
+	}
 }

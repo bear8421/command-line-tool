@@ -22,34 +22,34 @@ use Bear\App\Support\GetConfig;
  */
 class Model
 {
-    /**
-     * Function connection
-     *
-     * @param string $name
-     *
-     * @return QueryBuilder
-     * @throws Exception
-     * @author   : 713uk13m <dev@nguyenanhung.com>
-     * @copyright: 713uk13m <dev@nguyenanhung.com>
-     * @time     : 09/22/2021 16:41
-     */
-    public function connection(string $name = 'database_default'): QueryBuilder
-    {
-        if (empty($name)) {
-            $database = GetConfig::getDb('database_default');
-        } else {
-            $database = GetConfig::getDb($name);
-        }
-        if (empty($database)) {
-            throw new Exception('Database Connection Name Not Found');
-        }
-        $builder                      = new QueryBuilder($database);
-        $builder->debugStatus         = true;
-        $builder->debugLevel          = 'debug';
-        $builder->debugLoggerPath     = __DIR__ . '/../../storage/database/';
-        $builder->debugLoggerFilename = 'Log-' . date('Y-m-d') . '.log';
-        $builder->__construct();
+	/**
+	 * Function connection
+	 *
+	 * @param string $name
+	 *
+	 * @return QueryBuilder
+	 * @throws Exception
+	 * @author   : 713uk13m <dev@nguyenanhung.com>
+	 * @copyright: 713uk13m <dev@nguyenanhung.com>
+	 * @time     : 09/22/2021 16:41
+	 */
+	public function connection(string $name = 'database_default'): QueryBuilder
+	{
+		if (empty($name)) {
+			$database = GetConfig::getDb('database_default');
+		} else {
+			$database = GetConfig::getDb($name);
+		}
+		if (empty($database)) {
+			throw new Exception('Database Connection Name Not Found');
+		}
+		$builder = new QueryBuilder($database);
+		$builder->debugStatus = true;
+		$builder->debugLevel = 'debug';
+		$builder->debugLoggerPath = __DIR__ . '/../../storage/database/';
+		$builder->debugLoggerFilename = 'Log-' . date('Y-m-d') . '.log';
+		$builder->__construct();
 
-        return $builder;
-    }
+		return $builder;
+	}
 }

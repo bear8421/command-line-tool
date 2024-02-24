@@ -18,12 +18,12 @@ $app = new Application();
 
 // Routes list Command
 $app->command(
-    'greet [name] [--upper] [--randomFaker]',
-    TestCommand::class
+		'greet [name] [--upper] [--randomFaker]',
+		TestCommand::class
 );
 
 try {
-    $app->run();
+	$app->run();
 } catch (Exception $e) {
-    echo $e->getMessage() . PHP_EOL;
+	echo $e->getMessage() . PHP_EOL;
 }

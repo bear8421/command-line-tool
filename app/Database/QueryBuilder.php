@@ -21,20 +21,20 @@ use nguyenanhung\MyDatabase\Model\BaseModel;
  */
 class QueryBuilder extends BaseModel
 {
-    /**
-     * QueryBuilder constructor.
-     *
-     * @param array $database
-     *
-     * @author   : 713uk13m <dev@nguyenanhung.com>
-     * @copyright: 713uk13m <dev@nguyenanhung.com>
-     */
-    public function __construct(array $database = array())
-    {
-        parent::__construct($database);
-        if (!empty($database)) {
-            $this->database = $database;
-        }
-        $this->logger->setLoggerSubPath(__CLASS__);
-    }
+	/**
+	 * QueryBuilder constructor.
+	 *
+	 * @param array $database
+	 *
+	 * @author   : 713uk13m <dev@nguyenanhung.com>
+	 * @copyright: 713uk13m <dev@nguyenanhung.com>
+	 */
+	public function __construct(array $database = array())
+	{
+		parent::__construct($database);
+		if (!empty($database)) {
+			$this->database = $database;
+		}
+		$this->logger->setLoggerSubPath(__CLASS__);
+	}
 }

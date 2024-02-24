@@ -22,35 +22,39 @@ use Faker\Factory;
  */
 class TestCommand extends BaseCommand
 {
-    public function __invoke($name, $upper, $randomFaker, OutputInterface $output)
-    {
-        if ($name) {
-            $text = 'Hello, Iam ' . $name;
-        } else {
-            $text = 'Hello, Iam ' . $this->son();
-        }
-        if ($upper) {
-            $text = strtoupper($text);
-        }
-        if ($randomFaker) {
-            $this->randomFaker($output);
-        }
-        $output->writeln($text);
-    }
+	public function __invoke($name, $upper, $randomFaker, OutputInterface $output)
+	{
+		$styles = $this->outputFormatterStyle();
+		$output->getFormatter()->setStyle('fire', $styles['fire']);
 
-    protected function son(): string
-    {
-        return "Bear";
-    }
+		if ($name) {
+			$text = 'Hello, Iam ' . $name;
+		} else {
+			$text = 'Hello, Iam ' . $this->son();
+		}
+		if ($upper) {
+			$text = strtoupper($text);
+		}
+		if ($randomFaker) {
+			$this->randomFaker($output);
+		}
+		$output->writeln($text);
+	}
 
-    protected function randomFaker(OutputInterface $output): void
-    {
-        $faker = Factory::create();
+	protected function son(): string
+	{
+		return "Bear";
+	}
 
-        $max = 100;
-        for ($i = 0; $i < $max; $i++) {
-            $testMessage = $faker->ipv4() . ' | ' . $faker->name() . ' | ' . $faker->phoneNumber() . ' | ' . $faker->safeEmail() . ' | ' . $faker->uuid();
-            $output->writeln($testMessage);
-        }
-    }
+	protected function randomFaker(OutputInterface $output): void
+	{
+		$faker = Factory::create();
+
+		$max = 100;
+		for ($i = 0; $i < $max; $i++) {
+			$testMessage = $faker->ipv4() . ' | ' . $faker->name() . ' | ' . $faker->phoneNumber() . ' | ' . $faker->safeEmail() . ' | ' . $faker->uuid();
+
+			$output->writeln('<fire>' . $testMessage . '</>');
+		}
+	}
 }

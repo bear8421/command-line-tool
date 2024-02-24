@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.1] - 2023/02/25
+
+### Upgrade
+
+- [x] Upgrade base
+
 ## [1.1.0] - 2023/01/11
 
 ### Upgrade

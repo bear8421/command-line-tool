@@ -143,10 +143,16 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 # Project
-/storage/*
-!/storage/logs/.gitkeep
-!/storage/database/.gitkeep
-!/storage/cache/.gitkeep
-!/storage/debug/.gitkeep
-!/storage/tmp/.gitkeep
-!/storage/firewall/.gitkeep
+!storage/logs/.gitkeep
+!storage/logs/*
+!storage/database/.gitkeep
+!storage/database/*
+!storage/cache/.gitkeep
+!storage/cache/*
+!storage/debug/.gitkeep
+!storage/debug/*
+!storage/tmp/.gitkeep
+!storage/tmp/*
+!storage/firewall/.gitkeep
+!storage/firewall/*
+
