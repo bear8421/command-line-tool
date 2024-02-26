@@ -4,7 +4,8 @@ currentMenu: helpers
 
 # Console helpers
 
-You can use [Symfony's console helpers](http://symfony.com/doc/current/components/console/helpers/index.html) by getting them from the application:
+You can use [Symfony's console helpers](http://symfony.com/doc/current/components/console/helpers/index.html) by getting
+them from the application:
 
 ```php
 $app->command('greet', function ($input, $output) {
@@ -62,7 +63,8 @@ $app->command('greet', function () use ($notifier) {
 });
 ```
 
-If you are using the PHP-DI bridge ([read more here](php-di.md)) then you can configure PHP-DI to create the `Notifier` instance:
+If you are using the PHP-DI bridge ([read more here](php-di.md)) then you can configure PHP-DI to create the `Notifier`
+instance:
 
 ```php
 use Joli\JoliNotif\Notifier;

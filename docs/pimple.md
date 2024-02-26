@@ -4,9 +4,11 @@ currentMenu: pimple
 
 # Pimple
 
-As explained in the [dependency injection](dependency-injection.md) documentation, Silly can work with any PSR-11 dependency injection container.
+As explained in the [dependency injection](dependency-injection.md) documentation, Silly can work with any PSR-11
+dependency injection container.
 
-[Pimple](https://pimple.symfony.com/) provides less features than the [PHP-DI edition](php-di.md) (for example no autowiring) but might interest those already familiar with it, e.g. Silex users.
+[Pimple](https://pimple.symfony.com/) provides less features than the [PHP-DI edition](php-di.md) (for example no
+autowiring) but might interest those already familiar with it, e.g. Silex users.
 
 ## Installation
 
@@ -77,7 +79,8 @@ $app->command('greet [name]', function ($name, $dbHost, LoggerInterface $logger)
 $app->run();
 ```
 
-Dependency injection in parameters follows the precedence rules explained in the [dependency injection](dependency-injection.md) documentation:
+Dependency injection in parameters follows the precedence rules explained in
+the [dependency injection](dependency-injection.md) documentation:
 
 - command parameters are matched in priority using the parameter names (`$name`)
 - then container entries are matched using the callable type-hint (`Psr\Logger\LoggerInterface`)

@@ -4,9 +4,11 @@ currentMenu: php-di
 
 # The PHP-DI edition
 
-As explained in the [dependency injection](dependency-injection.md) documentation, Silly can work with any dependency injection container.
+As explained in the [dependency injection](dependency-injection.md) documentation, Silly can work with any dependency
+injection container.
 
-However in order to provide an easy way to get started we provide a "PHP-DI edition" that is already configured with the [PHP-DI container](http://php-di.org).
+However in order to provide an easy way to get started we provide a "PHP-DI edition" that is already configured with
+the [PHP-DI container](http://php-di.org).
 
 ## Installation
 
@@ -56,7 +58,9 @@ PHP-DI will automatically create a new instance of `MyCommand` when the `greet` 
 
 ## Configuration
 
-You can configure PHP-DI by overridding the [`createContainer()`](https://github.com/mnapoli/silly-php-di/blob/master/src/Application.php#L29) method in your `Application` class:
+You can configure PHP-DI by overridding
+the [`createContainer()`](https://github.com/mnapoli/silly-php-di/blob/master/src/Application.php#L29) method in
+your `Application` class:
 
 ```php
 class MyApplication extends Silly\Edition\PhpDi\Application
@@ -64,11 +68,11 @@ class MyApplication extends Silly\Edition\PhpDi\Application
     protected function createContainer()
     {
         $builder = ContainerBuilder::buildDevContainer();
-        
+
         $builder->addDefinitions([
             // add your PHP-DI config here
         ]);
-        
+
         return $builder->build(); // return the customized container
     }
 }
@@ -85,11 +89,11 @@ $app = new class() extends Silly\Edition\PhpDi\Application
     protected function createContainer()
     {
         $builder = ContainerBuilder::buildDevContainer();
-        
+
         $builder->addDefinitions([
             // add your PHP-DI config here
         ]);
-        
+
         return $builder->build(); // return the customized container
     }
 };
@@ -117,7 +121,8 @@ $app->command('greet [name]', function ($name, $dbHost, LoggerInterface $logger)
 $app->run();
 ```
 
-Dependency injection in parameters follows the precedence rules explained in the [dependency injection](dependency-injection.md) documentation:
+Dependency injection in parameters follows the precedence rules explained in
+the [dependency injection](dependency-injection.md) documentation:
 
 - command parameters are matched in priority using the parameter names (`$name`)
 - then container entries are matched using the callable type-hint (`Psr\Logger\LoggerInterface`)

@@ -1,21 +1,21 @@
-# Start Project use CLI
+# Command Line Tool with PHP
 
 [![Latest Stable Version](http://poser.pugx.org/bear8421/command-line-tool/v)](https://packagist.org/packages/bear8421/command-line-tool) [![Total Downloads](http://poser.pugx.org/bear8421/command-line-tool/downloads)](https://packagist.org/packages/bear8421/command-line-tool) [![Latest Unstable Version](http://poser.pugx.org/bear8421/command-line-tool/v/unstable)](https://packagist.org/packages/bear8421/command-line-tool) [![License](http://poser.pugx.org/bear8421/command-line-tool/license)](https://packagist.org/packages/bear8421/command-line-tool) [![PHP Version Require](http://poser.pugx.org/bear8421/command-line-tool/require/php)](https://packagist.org/packages/bear8421/command-line-tool)
 
-Base Command Line Tool use Silly CLI micro-framework based on Symfony Console
+Start Project Command Line Tool use PHP with Silly CLI micro-framework based on Symfony Console
 
 ## Donate Me
 
-Buy me a coffee: https://paypal.me/nguyenanhung
+Buy me a coffee: [https://paypal.me/nguyenanhung](https://paypal.me/nguyenanhung)
 
 ## Summary
 
-| Key       | Value                                                     |
-|-----------|-----------------------------------------------------------|
-| Project   | Start Project PHP CLI                                     |
-| Framework | Silly CLI micro-framework                                 |
-| GitHub    | https://github.com/bear8421/command-line-tool             |
-| Packagist | https://packagist.org/packages/bear8421/command-line-tool |
+| Key       | Value                                                                                                                  |
+|-----------|------------------------------------------------------------------------------------------------------------------------|
+| Project   | Command Line Tool                                                                                                      |
+| Framework | Silly CLI micro-framework                                                                                              |
+| GitHub    | [https://github.com/bear8421/command-line-tool](https://github.com/bear8421/command-line-tool)                         |
+| Packagist | [https://packagist.org/packages/bear8421/command-line-tool](https://packagist.org/packages/bear8421/command-line-tool) |
 
 ## Install the Application
 
@@ -46,17 +46,12 @@ class TestCommand
             $text = 'Hello, Iam ' . $name;
             $output->writeln("Bear");
         } else {
-            $text = 'Hello, Iam.' . $this->son();
+            $text = 'Hello, Iam. BEAR';
         }
         if ($upper) {
             $text = strtoupper($text);
         }
         $output->writeln($text);
-    }
-
-    protected function son(): string
-    {
-        return "Bear";
     }
 }
 
@@ -74,11 +69,16 @@ define('BEAR', $_SERVER['BEAR_ENV'] ?? 'production');
 require_once __DIR__ . '/vendor/autoload.php';
 
 use Silly\Edition\PhpDi\Application;
+use Bear\App\Command\TestCommand;
 
 $app = new Application();
+$app->setName(ENV_APP_NAME);
 
 // Routes list Command
-$app->command('greet [name] [--upper]', 'Bear\App\Command\TestCommand');
+$app->command(parseExpressionOptions('greet', [
+		'u|upper',
+		'r|randomFaker'
+]), TestCommand::class)->descriptions(TestCommand::$desc, TestCommand::$optionsInfo);
 
 try {
     $app->run();
@@ -94,9 +94,9 @@ Running the application is the same as running any other Symfony Console applica
 ```
 $ php bear greet
 Hello
-$ php bear greet john --yell
+$ php bear greet john --upper
 HELLO JOHN
-$ php bear greet --yell john
+$ php bear greet --upper john
 HELLO JOHN
 ```
 
@@ -104,14 +104,15 @@ HELLO JOHN
 
 ## Documentation
 
-Also see Official Document here: https://github.com/bear8421/command-line-tool/tree/main/docs
+Also see Official Document
+here: [https://github.com/bear8421/command-line-tool/tree/main/docs](https://github.com/bear8421/command-line-tool/tree/main/docs)
 
 ## Contact
 
 If any question & request, please contact following information
 
-| Name        | Email                | Skype            | Facebook      |
-|-------------|----------------------|------------------|---------------|
-| Hung Nguyen | dev@nguyenanhung.com | nguyenanhung5891 | @nguyenanhung |
+| Name        | Email                | GitHub        | Facebook      |
+|-------------|----------------------|---------------|---------------|
+| Hung Nguyen | dev@nguyenanhung.com | @nguyenanhung | @nguyenanhung |
 
-From Hanoi with Love <3
+From Hanoi with Love ❤️

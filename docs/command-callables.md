@@ -44,7 +44,8 @@ When running `$ bin/console greet john --yell`:
 
 ### Input and output
 
-You can also ask for the `$input` and `$output` parameters to get the traditional Symfony `InputInterface` and `OutputInterface` objects (the type-hint is optional):
+You can also ask for the `$input` and `$output` parameters to get the traditional Symfony `InputInterface`
+and `OutputInterface` objects (the type-hint is optional):
 
 ```php
 $app->command(
@@ -83,4 +84,5 @@ $app->command(
 
 ### Dependency injection
 
-It is also possible to set up dependency injection through the callables parameters. To learn more about that, read the [Dependency injection](dependency-injection.md) documentation.
+It is also possible to set up dependency injection through the callables parameters. To learn more about that, read
+the [Dependency injection](dependency-injection.md) documentation.
