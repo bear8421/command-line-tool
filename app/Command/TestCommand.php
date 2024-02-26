@@ -22,6 +22,13 @@ use Faker\Factory;
  */
 class TestCommand extends BaseCommand
 {
+	public static string $desc = 'Test Command Application';
+	public static array $optionsInfo = [
+		'name' => CMD_AUTHOR_NAME,
+		'--upper' => 'Upper output text message',
+		'--randomFaker' => 'Random user info',
+	];
+
 	public function __invoke($name, $upper, $randomFaker, OutputInterface $output)
 	{
 		$styles = $this->outputFormatterStyle();
@@ -30,20 +37,18 @@ class TestCommand extends BaseCommand
 		if ($name) {
 			$text = 'Hello, Iam ' . $name;
 		} else {
-			$text = 'Hello, Iam ' . $this->son();
+			$text = 'Hello, Iam BEAR';
 		}
+
 		if ($upper) {
 			$text = strtoupper($text);
 		}
+
 		if ($randomFaker) {
 			$this->randomFaker($output);
 		}
-		$output->writeln($text);
-	}
 
-	protected function son(): string
-	{
-		return "Bear";
+		$output->writeln($text);
 	}
 
 	protected function randomFaker(OutputInterface $output): void

@@ -15,12 +15,13 @@ use Silly\Edition\PhpDi\Application;
 use Bear\App\Command\TestCommand;
 
 $app = new Application();
+$app->setName(ENV_APP_NAME);
 
 // Routes list Command
-$app->command(
-		'greet [name] [--upper] [--randomFaker]',
-		TestCommand::class
-);
+$app->command(parseExpressionOptions('greet', [
+		'u|upper',
+		'r|randomFaker'
+]), TestCommand::class)->descriptions(TestCommand::$desc, TestCommand::$optionsInfo);
 
 try {
 	$app->run();

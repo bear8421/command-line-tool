@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.2] - 2023/02/27
+
+### Upgrade
+
+- [x] Upgrade: app name, command description
+
 ## [1.1.1] - 2023/02/25
 
 ### Upgrade

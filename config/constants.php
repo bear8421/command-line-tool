@@ -7,5 +7,8 @@
  * Date: 09/22/2021
  * Time: 06:04
  */
-defined('_PROCESS_TEST_') or define('_PROCESS_TEST_', false);
+defined('IS_PRODUCTION') or define('IS_PRODUCTION', false);
+defined('IS_TEST') or define('IS_TEST', false);
 defined('CACHE_KEY') or define('CACHE_KEY', 'BEAR_COMMAND_APP_');
+defined('ENV_APP_NAME') or define('ENV_APP_NAME', 'Command Line Tools build with PHP ' . phpversion());
+defined('CMD_AUTHOR_NAME') or define('CMD_AUTHOR_NAME', 'Hello, Iam Hung Nguyen <dev@nguyenanhung.com> - https://nguyenanhung.com');
