@@ -9,13 +9,12 @@ require_once __DIR__ . '/config/constants.php';
 // Includes Composer Vendor Packages
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Silly\Edition\PhpDi\Application;
 
 // List all Command
+use nguyenanhung\Console\Application\PhpDiApplication;
 use Bear\App\Command\TestCommand;
 
-$app = new Application();
-$app->setName(ENV_APP_NAME);
+$app = new PhpDiApplication(ENV_APP_NAME, '1.0.0');
 
 // Routes list Command
 $app->command(parseExpressionOptions('greet', [
