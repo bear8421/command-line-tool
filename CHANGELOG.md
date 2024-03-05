@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.5] - 2024/03/06
+
+### Upgrade
+
+- [x] Upgrade `composer.json` script
+
 ## [1.1.4] - 2024/03/01
 
 ### Upgrade

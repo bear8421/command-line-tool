@@ -52,5 +52,13 @@
 		"nguyenanhung/requests": "Needs for support Request use CURL",
 		"nguyenanhung/monitor": "Needs for support Monitoring Service",
 		"pheromone/phpcs-security-audit": "phpcs-security-audit is a set of PHP_CodeSniffer rules that finds vulnerabilities and weaknesses related to security in PHP coder"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php bear completion --ansi -h"
+		],
+		"post-update-cmd": [
+			"php bear completion --ansi -h"
+		]
 	}
 }
