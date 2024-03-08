@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.7] - 2024/03/09
+
+### What's Changed
+
+- [x] Update `Binaries File` in `/your/path/bin`
+
 ## [1.1.6] - 2024/03/09
 
 ### What's Changed

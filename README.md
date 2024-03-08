@@ -104,8 +104,6 @@ HELLO JOHN
 
 ## Binaries Bash Setup
 
-### Move file `bear` in `/your/path` to `/your/path/bin`
-
 ### Setup in to `.bash_profile` or `.zshrc`
 
 ```shell
