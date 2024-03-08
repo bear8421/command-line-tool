@@ -94,9 +94,9 @@ Running the application is the same as running any other Symfony Console applica
 ```
 $ php bear greet
 Hello
-$ php bear greet john --upper
+$ php bear greet vietnam --upper
 HELLO JOHN
-$ php bear greet --upper john
+$ php bear greet --upper vietnam
 HELLO JOHN
 ```
 
@@ -127,7 +127,7 @@ source ~/.zshrc
 ### Use with Binaries
 
 ```shell
-bear greet --upper john
+bear greet --upper vietnam
 ```
 
 ## Documentation
