@@ -5,6 +5,7 @@
 ### What's Changed
 
 - [x] Refactor structure project
+- [x] Add document for `Binaries Bash Setup`
 
 ## [1.1.5] - 2024/03/06
 
