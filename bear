@@ -5,14 +5,11 @@ define('BEAR', $_SERVER['BEAR_ENV'] ?? 'production');
 
 // Includes Constants
 require_once __DIR__ . '/config/constants.php';
-
-// Includes Composer Vendor Packages
 require_once __DIR__ . '/vendor/autoload.php';
 
-
 // List all Command
-use nguyenanhung\Console\Application\PhpDiApplication;
 use Bear\App\Command\TestCommand;
+use nguyenanhung\Console\Application\PhpDiApplication;
 
 $app = new PhpDiApplication(ENV_APP_NAME, '1.0.0');
 

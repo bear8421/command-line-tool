@@ -102,6 +102,34 @@ HELLO JOHN
 
 `Silly\Application` extends `Symfony\Console\Application` and can be used wherever Symfony's Application can.
 
+## Binaries Bash Setup
+
+### Move file `bear` in `/your/path` to `/your/path/bin`
+
+### Setup in to `.bash_profile` or `.zshrc`
+
+```shell
+export PATH="/your/path/bin:$PATH"
+```
+
+### Reload Bash session
+
+```shell
+source ~/.bash_profile
+```
+
+hoặc
+
+```shell
+source ~/.zshrc
+```
+
+### Use with Binaries
+
+```shell
+bear greet --upper john
+```
+
 ## Documentation
 
 Also see Official Document
