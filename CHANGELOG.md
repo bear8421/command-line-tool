@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.8] - 2024/03/15
+
+### What's Changed
+
+- [x] Update check `php_sapi_name`
+
 ## [1.1.7] - 2024/03/09
 
 ### What's Changed
