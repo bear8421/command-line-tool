@@ -62,6 +62,11 @@ And declare Command in `Bear` in `bear` file in root folder
 ```php
 #!/usr/bin/env php
 <?php
+
+if (php_sapi_name() !== 'cli') {
+	exit;
+}
+
 // Register Application Space
 define('BEAR', $_SERVER['BEAR_ENV'] ?? 'production');
 
