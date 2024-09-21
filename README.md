@@ -1,6 +1,9 @@
 # Command Line Tool with PHP
 
-[![Latest Stable Version](http://poser.pugx.org/bear8421/command-line-tool/v)](https://packagist.org/packages/bear8421/command-line-tool) [![Total Downloads](http://poser.pugx.org/bear8421/command-line-tool/downloads)](https://packagist.org/packages/bear8421/command-line-tool) [![Latest Unstable Version](http://poser.pugx.org/bear8421/command-line-tool/v/unstable)](https://packagist.org/packages/bear8421/command-line-tool) [![License](http://poser.pugx.org/bear8421/command-line-tool/license)](https://packagist.org/packages/bear8421/command-line-tool) [![PHP Version Require](http://poser.pugx.org/bear8421/command-line-tool/require/php)](https://packagist.org/packages/bear8421/command-line-tool)
+[![Latest Stable Version](https://img.shields.io/packagist/v/bear8421/command-line-tool.svg?style=flat-square)](https://packagist.org/packages/bear8421/command-line-tool)
+[![Total Downloads](https://img.shields.io/packagist/dt/bear8421/command-line-tool.svg?style=flat-square)](https://packagist.org/packages/bear8421/command-line-tool)
+[![License](https://img.shields.io/packagist/l/bear8421/command-line-tool.svg?style=flat-square)](https://packagist.org/packages/bear8421/command-line-tool)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/bear8421/command-line-tool/php)](https://packagist.org/packages/bear8421/command-line-tool)
 
 Start Project Command Line Tool use PHP with Silly CLI micro-framework based on Symfony Console
 
